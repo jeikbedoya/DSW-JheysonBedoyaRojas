@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos</title>
+    <link rel = "stylesheet" type = "text/css" href = "estilos.css" />
+</head>
+<body>
+    <h1 class="title">Estilos internos y Externos,Selectores CSS3</h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="conceptos01.html">Conceptos</a></li>
+            <li><a href="recursos01.html">recursos</a></li>
+            <li><a href="autoevaluacion01.html">Autoevaluación</a></li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2 class="sub-title">CONCEPTOS (segunda parte)</h2>
+        <br>
+        <figure>
+            <img src="http://www.w3bai.com/css/selector.gif" alt="">
+            <figcaption>http://www.w3bai.com/es/css/css_syntax.html</figcaption>
+        </figure>
+        <br>
+        <section>
+            <h3>Selectores CSS</h3>
+        <p>
+            Los selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS.
+        </p>
+    
+        <ol>
+            <li>
+                <h5>Selector universal</h5>
+                <p>
+                    Se utiliza para seleccionar todos los elementos de la página. El siguiente ejemplo elimina el margen y el relleno de todos los elementos HTML (por ahora no es importante fijarse en la parte de la declaración de la regla CSS):
+                </p>
+                <pre>
+                    <code>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                          } 
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <h5>Selector de tipo o etiqueta</h5>
+                <p>
+                    Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector. El siguiente ejemplo selecciona todos los párrafos de la página:
+                </p>
+                <pre>
+                    <code>
+                        p {
+                            color: #8A8E27;
+                            font-weight: normal;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <h5>Selector descendente</h5>
+                <p>
+                    Selecciona los elementos que se encuentran dentro de otros elementos. Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del otro elemento.
+                    El selector del siguiente ejemplo selecciona todos los elementos &lt;span&gt; de la página que se encuentren dentro de un elemento  &lt;p&gt;:
+                </p>
+                <pre>
+                    <code>
+                        p span { color: red; }
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <h5>Selector de clase</h5>
+                <p>
+                    Si tenemos como vemos en el siguiente ejemplo varios parrafos pero queremos aplicar un estilo al primero y tercero un estilo,
+                    este es un caso donde el selector de clase puede ser usado simplemente agregando "class='nombre-clase'" como vemos en el ejemplo
+                </p>
+                <pre>
+                    <code>
+                        &lt;body&gt;
+                            &lt;p class='destacado'&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
+                            &lt;p&gt;Nunc sed lacus et est adipiscing accumsan...&lt;/p&gt;
+                            &lt;p class='destacado'&gt;Class aptent taciti sociosqu ad litora...&lt;/p&gt;
+                        &lt;/body&gt;
+                    </code>
+                </pre>
+                <p>Entonces en nuestro CSS podemos aplicar un estilo solo para esa clase la sintaxis es agregando un punrto antes del nombre de la clase como podemos ver a continuación:</p>
+                <pre>
+                    <code>
+                        .destacado { color: red; }
+                    </code>
+                </pre>
+            </li>
+
+            <li>
+                <h5>Selectores de ID</h5>
+                <p>
+                    En ocasiones, es necesario aplicar estilos CSS a un único elemento de la página. Aunque puede utilizarse un selector de clase para aplicar estilos a un único elemento, existe otro selector más eficiente en este caso.
+                </p>
+                <p>
+                    El selector de ID permite seleccionar un elemento de la página a través del valor de su atributo id. Este tipo de selectores sólo seleccionan un elemento de la página porque el valor del atributo id no se puede repetir en dos elementos diferentes de una misma página.
+                </p>
+                                  
+                </p>
+                <pre>
+                    <code>
+                        <p>Primer párrafo</p>
+                        <p id="destacado">Segundo párrafo</p>
+                        <p>Tercer párrafo</p>
+                    </code>
+                </pre>
+                <p>
+                    La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase, salvo que se utiliza el símbolo de la almohadilla (#) en vez del punto (.) como prefijo del nombre de la regla CSS:
+                </p>  
+                <pre>
+                    <code>
+                        #destacado { color: red; }
+                    </code>
+                </pre>
+            </li>
+           
+        </ol>
+        </section>
+    </div>
+    <aside class="feed">
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="conceptos01.html">Primera parte</a></li>
+            </ul>
+        </nav>
+        
+    </aside>
+</body>
+</html>

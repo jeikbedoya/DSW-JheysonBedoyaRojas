@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+
+<body>
+    <h1 class="title">Estilos internos y Externos,Selectores CSS</h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="conceptos01.html">Conceptos</a></li>
+            <li><a href="recursos01.html">recursos</a></li>
+            <li><a href="autoevaluacion01.html">Autoevaluación</a></li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2 class="sub-title">CONCEPTOS (primera parte)</h2>
+        <br>
+        <figure>
+            <img src="https://miro.medium.com/max/600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg" alt="">
+            <figcaption>https://learning.linkedin.com/blog/tech-tips/5-great-reasons-to-learn-a-little-css</figcaption>
+        </figure>
+      
+        <section>
+            <h3>Hoja de estilo interno</h3>
+            <p>
+                sirven para aplicar de forma coherente los mismos estilos a un proyecto web. De esta forma una
+                modificación en un estilo se aplica a todas las web de un proyecto, de forma automática.
+            </p>
+            <p>
+                La forma más sencilla para definir reglas de estilo es utilizar la nueva etiqueta pareada
+                <strong>&lt;style&gt;</strong>, que crea un conjunto de reglas de estilo que tendrán valor desde el
+                punto de inserción en adelante.
+                Por lo general, esta etiqueta se incluye en la sección <strong>&lt;head&gt;</strong>, para que esté
+                disponible en todo el cuerpo del documento.
+                <strong>&lt;style&gt;</strong> tiene un único atributo <strong>&lt;type&gt;</strong>, que informa sobre
+                el tipo de reglas de estilo que contiene; por ahora, siempre se utilizará text/ccs.
+            </p>
+            <p>
+                Dentro de <strong>&lt;style&gt;</strong> se incluyen líneas que se corresponden con los diferentes
+                estilos de presentación de los diversos elementos del documento.
+            </p>
+            <pre>
+            <code>
+            &lt;head&gt;
+            &lt;style type="text/css"&gt;
+                body {
+                    background-color: gray;
+                }
+            &lt;/style&gt;  
+            &lt;/head&gt;
+            </code>
+        </pre>
+        </section>
+        <section>
+
+            <h3>Hoja de estilo externo</h3>
+        
+            <p>
+                Para definir el estilo de una página de un web desde un archivo externo, debe crearse un archivo de
+                texto, conteniendo las definiciones, y guardarlo con la extensión *.css.
+                Una vez creado, basta incluir un link a ese archivo .css en cada página que queramos aplicar estos
+                estilos. De esta forma, una misma hoja de estilos puede aplicarse a cualquier número de páginas web,
+                simplemente incluyendo en todas ellas el link correspondiente.
+                Como cualquier link, la localización del archivo CSS puede ser absoluta o relativa, dependiendo de su
+                ubicación dentro del propio sitio web, o en otra dirección.
+                El link siempre debe insertarse dentro de las etiquetas <strong>&lt;head&gt;</strong> del encabezamiento
+                de la página We.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <pre>
+            <code>
+                &lt;head&gt;
+                    &lt;link rel="STYLESHEET" href="estilos.css" type="text/css"&gt;
+                &lt;/head&gt;
+            </code>
+        </pre>
+        </section>
+    </div>
+    <aside class="feed">
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="conceptos02.html">Segunda parte</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+</body>
+
+</html>
